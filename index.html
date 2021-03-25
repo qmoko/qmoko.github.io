@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF 8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Qonita's Portfolio Website</title>
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+	integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+bmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+	<!-- Update these with your own fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Source+Sans+Pro:300,90B&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://kit.fontawesome.com/7e29a499af.js" crossorigin="anonymous"></script>
+ </head>
+
+<!-- alt - for decorative images or stylings you dont need to put an alt text cos they can't see it anyway so leave it blank*/ -->
+
+<body>
+	<header>
+		<div class="logo"><a href="index.html">
+			<img src="img/logo.png" alt="logo"></a>
+
+		</div>
+		<button class="nav-toggle" aria-label="toggle navitation"> 
+			<spam class="hamburger"></spam>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+				<li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+				<li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+		</nav>
+
+
+	</header>
+
+<!-- Introduction -->
+<section class="intro" id="home">
+<h1 class="section__title section__title--intro">
+Hi, I am <strong> Qonita</strong>
+</h1>
+<p class="section__subtitle section__subtitle--intro">web designer </p>
+<img src="img/qonita-01.JPG" alt="picture of Qonita smiling" class="intro__img">
+</section>
+
+<!-- My services -->
+<section class="my-services" id="services">
+	<h2 class="section__title section__title--services">What I do</h2>
+	<div class="services">
+		<div class="service">
+			<h3>Design and Development</h3>
+			<p>I enjoy designing and developing website for all types of purposes. Working with clients to fulfil their needs. </p>
+
+		</div> <!-- /service -->
+
+		<div class="service">
+			<h3>E-Commerce</h3>
+			<p>Do you need to sell products or services? A website is a perfect place to build your online presence and provides the flexibility to sell products and services with just a few clicks!</p>
+
+		</div> <!-- /service -->
+
+		<div class="service">
+			<h3>WordPress </h3>
+			<p>This content system is highly useful and intuitive, once I've developed and designed a site, you can take over thanks to this easy to use system.  </p>
+
+		</div> 
+	</div> 
+
+	<a href="#work" class="btn">My Work</a>
+</section>
+
+<!-- About me -->
+<section class="about-me" id="about">
+	<h2 class="section__title section__title--about">Who I am</h2>
+	<p class="section__subtitle section__subtitle--about">Designer & developer based in Nottingham</p>
+
+	<div class="about-me__body">
+		<p> Just your average girl with a keen interest in web design and development! I've always enjoyed the process of website design since I was a teen and decided to dabble in some programming as of recent!</p>
+			 <p>Fun fact: Despite studying IT in University, I only just started truly enjoying code after I graduated. 
+				 This eureka moment came to me during my first freelance job. Turns out, I actually quite enjoyed the times I had to mess about with the CSS and PHP of the web pages! 
+				 Everytime I tapped 'inspect' on Chrome, I found myself fascinated with what goes on in the background of a website. I fell into the YouTube rabbit hole, where I watched countless tutorials - eager to learn even more.
+			  </p>
+		
+		<p>Ever since then, I've been passionate about creating websites, wanting to develop my front-end skills even further. Have a wander here and you'll find a compilation of projects I have gotten involved with!</p>
+
+		<p><strong>Skills:</strong></p>
+
+<p>User Experience | Research | Responsive Web Design | Wireframes | Front-End Development Basics | Content | Visual Design | UI Design  </p>
+<p><strong>Technical Skills:</strong></p>
+<p>HTML | CSS | JavaScript | PHP</p>
+
+<p><strong>Tools:</strong></p>
+
+<p>WordPress | WiX | Photoshop | GIMP | G Suite & Google Drive | MS Office | Virtual Studio Code | Sublime Text</p>
+	
+	</div>
+<img src=img/qonita-02.JPG alt="Qonita sitting and smiling at camera" class="about-me__img">
+</section>
+
+<!-- My Work -->
+<section class="my-work" id="work">
+	<h2 class="section__title section__title--work">My work</h2>
+	<p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+	<div class="portfolio">
+		<!-- Portfolio item 01 -->
+		<a href="HAI.html" class="portfolio__item" id="portfolio-item">
+			<img src="img/HAI-hp.png" alt="Desktop view on monitor showing HAI homepage" class="portfolio__img">
+			
+		</a>
+
+		<!-- Portfolio item 05 -->
+		<a href="UKMN.html" class="portfolio__item" id="portfolio-item">
+			<img src="img/UKMN-hp.png" alt="Mobile and desktop view of UKMN homepage" class="portfolio__img">
+			
+		</a>
+
+
+		<!-- Portfolio item 09 -->
+		<a href="DWLW.html" class="portfolio__item" id="portfolio-item">
+			<img src="img/DWLW-hp.png" alt="Desktop view on monitor showing DWLW bikes shopping page" class="portfolio__img">
+			
+		</a>
+
+	</div>
+</section>
+
+<!-- scroll to top button -->
+<button onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+
+<!-- footer -->
+<footer class="footer">
+	<!-- my email address-->
+
+	<a href="mailto:qonimoko@gmail.com" class="footer__link">qonimoko@gmail.com</a>
+	<ul class="social-list">
+		<li class="social-list__item"> 
+			<a class="social-list__link" href="https://www.linkedin.com/in/qonita-widyatmoko-8059b8105/">
+				<i class="fab fa-linkedin-in"></i
+					></a>
+		</li> 
+		<li class="social-list__item"> 
+			<a class="social-list__link" href="https://github.com/qmoko">
+				<i class="fab fa-github"></i>
+			</a>
+		</li>
+	</ul>
+
+
+</footer>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
