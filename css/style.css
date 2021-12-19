@@ -13,9 +13,10 @@
 	--fw-reg: 300;
 	--fw-bold: 900;
 
-	--clr-light: #ffff;
-	--clr-dark: #303030;
-	--clr-accent: #d6b6fe;
+	--clr-light: #fcecec;
+	--clr-dark: #515389;
+	--clr-accent:#8672A5;
+	--clr-accent2: #EEB1B1;
 
 	--fs-1: 3rem;
 	--fs-h2: 2.25rem;
@@ -68,7 +69,7 @@ strong {font-weight: var(--fw-bold)
 
 /*this is when you press the tab button */
 :focus {
-	outline: 3px solid var(--clr-accent);
+	outline: 3px solid var(--clr-accent2);
 	outline-offset: 3px;
 }
 
@@ -77,7 +78,7 @@ strong {font-weight: var(--fw-bold)
 .btn {
 	display: inline-block;
 	padding: .5em 2.5em;
-	background: var(--clr-accent);
+	background: var(--clr-accent2);
 	color: var(--clr-dark);
 	text-decoration: none;
 	/*note this cursor bit is important to have for buttons! so that it is not just the text that is linked but the button too*/
@@ -99,10 +100,11 @@ strong {font-weight: var(--fw-bold)
 }
 
 
+
 #visit-website-btn {
-	display: flex;
 	padding: .5em 2.5em;
-	background: var(--clr-accent);
+	align-content: center;
+	background: var(--clr-accent2);
 	color: var(--clr-dark);
 	text-decoration: none;
 	/*note this cursor bit is important to have for buttons! so that it is not just the text that is linked but the button too*/
@@ -131,7 +133,7 @@ strong {font-weight: var(--fw-bold)
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
-	background-color: var(--clr-accent); /* Set a background color */
+	background-color: var(--clr-accent2); /* Set a background color */
 	color: black; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
@@ -161,6 +163,7 @@ strong {font-weight: var(--fw-bold)
   }
 
 /* TYPOGRAPHY */
+
 
 h1,
 h2,
@@ -192,14 +195,14 @@ h3{ font-size: var(--fs-h3); }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-	background: var(--clr-accent);
+	background: var(--clr-accent2);
 	padding: .25em;
 	font-family: var(--ff-secondary);
 	margin-bottom: 1em;
 }
 
 .section__subtitle--work {
-	color: var(--clr-accent);
+	color: var(--clr-accent2);
 	font-weight: var(--fw-bold);
 	margin-bottom: 2em;
 }
@@ -333,6 +336,7 @@ header {
 
 .intro__img {
 	box-shadow:var(--bs);
+	border-radius: 50px;
 }
 
 .section__subtitle--intro{
@@ -374,7 +378,7 @@ header {
 
 .my-services {
 	background-color: var(--clr-dark);
-	background-image: url(../img/services-bg.png);
+	/*background-image: url(../img/services-bg.png);*/
 	background-size: cover;
 	/* background-blend-mode: overlay;*/
 	color: var(--clr-light);
@@ -382,7 +386,7 @@ header {
 }
 
 .section__title--services {
-	color: var(--clr-accent);
+	color: var(--clr-accent2);
 	position: relative;
 }
 
@@ -424,11 +428,15 @@ header {
 
 .about-me {
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 20px auto;
+	border-radius: 20px;
+	box-shadow: var(--bs);
+	background-color: #f1d7d7;
 }
 
 .about-me__img{
 	box-shadow: var(--bs);
+	border-radius: 20px;
 }
 
 @media (min-width: 600px){
@@ -483,6 +491,10 @@ header {
 .portfolio__item{
 	background: var(--clr-dark);
 	overflow: hidden;
+	border-radius: 20px;
+	margin: 20px;
+	/* This z index is so that the border radius doesn't switch to square on hover*/
+	z-index: 2;
 }
 
 .portfolio__img{
@@ -521,11 +533,14 @@ header {
 /*FOOTER*/
 
 .footer {
-	background: #111;
-	color: var(--clr-accent);
+	margin-top:10px;
+	/*background: #1e1f33;*/
+	color: var(--clr-accent2);
 	text-align: center;
-	padding: 2.em 0;
-	font-size: var(--fs-h3);
+	padding: 10px;
+	font-size: var(--fs-body);
+	border-radius: 20px 20px 0px 0px;
+	border-style: dotted;
 }
 
 .footer a {
@@ -534,7 +549,7 @@ header {
 }
 
 .footer__link{
-	
+	margin-top: 20px;
 	font-weight: var(--fw-bold);
 }
 
